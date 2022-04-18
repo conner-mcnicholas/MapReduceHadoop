@@ -1,0 +1,73 @@
+22/04/18 08:55:51 WARN streaming.StreamJob: -file option is deprecated, please use generic option -files instead.
+packageJobJar: [/home/cloudera/AutoIncMapRed/autoinc_mapper1.py, /home/cloudera/AutoIncMapRed/autoinc_reducer1.py] [/usr/jars/hadoop-streaming-2.6.0-cdh5.4.2.jar] /tmp/streamjob6937060663934598033.jar tmpDir=null
+22/04/18 08:55:53 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/18 08:55:54 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/18 08:55:54 INFO mapred.FileInputFormat: Total input paths to process : 1
+22/04/18 08:55:54 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/18 08:55:55 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650277646837_0026
+22/04/18 08:55:55 INFO impl.YarnClientImpl: Submitted application application_1650277646837_0026
+22/04/18 08:55:55 INFO mapreduce.Job: The url to track the job: http://quickstart.cloudera:8088/proxy/application_1650277646837_0026/
+22/04/18 08:55:55 INFO mapreduce.Job: Running job: job_1650277646837_0026
+22/04/18 08:56:03 INFO mapreduce.Job: Job job_1650277646837_0026 running in uber mode : false
+22/04/18 08:56:03 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/18 08:56:14 INFO mapreduce.Job:  map 50% reduce 0%
+22/04/18 08:56:15 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/18 08:56:22 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/18 08:56:22 INFO mapreduce.Job: Job job_1650277646837_0026 completed successfully
+22/04/18 08:56:22 INFO mapreduce.Job: Counters: 49
+	File System Counters
+		FILE: Number of bytes read=446
+		FILE: Number of bytes written=342537
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1686
+		HDFS: Number of bytes written=156
+		HDFS: Number of read operations=9
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=2
+		Launched reduce tasks=1
+		Data-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=16815
+		Total time spent by all reduces in occupied slots (ms)=5273
+		Total time spent by all map tasks (ms)=16815
+		Total time spent by all reduce tasks (ms)=5273
+		Total vcore-seconds taken by all map tasks=16815
+		Total vcore-seconds taken by all reduce tasks=5273
+		Total megabyte-seconds taken by all map tasks=17218560
+		Total megabyte-seconds taken by all reduce tasks=5399552
+	Map-Reduce Framework
+		Map input records=16
+		Map output records=16
+		Map output bytes=408
+		Map output materialized bytes=452
+		Input split bytes=196
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=5
+		Reduce shuffle bytes=452
+		Reduce input records=16
+		Reduce output records=5
+		Spilled Records=32
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=184
+		CPU time spent (ms)=1460
+		Physical memory (bytes) snapshot=586579968
+		Virtual memory (bytes) snapshot=4512378880
+		Total committed heap usage (bytes)=391979008
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1490
+	File Output Format Counters 
+		Bytes Written=156
+22/04/18 08:56:22 INFO streaming.StreamJob: Output directory: /output/all_accidents
