@@ -16,6 +16,7 @@
 ## Test
 
 ```[cloudera@quickstart AutoIncMapRed]$ hadoop fs -get /input/data.csv```
+
 ```[cloudera@quickstart AutoIncMapRed]$ cat data.csv | ./autoinc_mapper1.py | sort | ./autoinc_reducer1.py | ./autoinc_mapper2.py | sort | ./autoinc_reducer2.py```
 Toyota	2017	1
 Mercedes	2016	1
