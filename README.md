@@ -6,13 +6,14 @@
 2. Signed into Terminal as user: cloudera
 3. From filemanager dashboard via http://localhost:8888/, directly uploaded data.csv to /input/
 4. Made new directory /home/cloudera/AutoIncMapRed, and created:
--autoinc_mapper1.py
--autoinc_reducer1.py
--autoinc_mapper2.py
--autoinc_reducer2.py
+```
+autoinc_mapper1.py
+autoinc_reducer1.py
+autoinc_mapper2.py
+autoinc_reducer2.py
 -*1.py files form the basis of hdp_mapReduce1.sh
 -*2.py files form the basis of hdp_mapReduce1.sh
-
+```
 ## Test
 
 ```
