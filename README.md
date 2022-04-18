@@ -18,6 +18,8 @@ autoinc_reducer2.py
 ## Test
 
 ```
+[cloudera@quickstart AutoIncMapRed]$ #must remember to allow execute permissions on python scripts
+[cloudera@quickstart AutoIncMapRed]$ chmod +x *.py
 [cloudera@quickstart AutoIncMapRed]$ hadoop fs -get /input/data.csv```
 [cloudera@quickstart AutoIncMapRed]$ cat data.csv | ./autoinc_mapper1.py | sort | ./autoinc_reducer1.py | ./autoinc_mapper2.py | sort | ./autoinc_reducer2.py
 Toyota	2017	1
@@ -26,7 +28,12 @@ Mercedes	2015	2
 Nissan	2003	1
 ```
 
-With the python code vetted, we execute the hadoop MapReduce jobs in two steps:
+With the python code vetted, we execute the hadoop MapReduce jobs in two steps.  
+
+```
+[cloudera@quickstart AutoIncMapRed]$ #must remember to allow execute permissions on shell scripts
+[cloudera@quickstart AutoIncMapRed]$ chmod +x *.sh
+```
 
 ## MapReduce Step 1
 Running:\
