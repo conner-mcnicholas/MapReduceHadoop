@@ -36,7 +36,7 @@ Yields:\
 Results Found in:\
   `hdp_results1.txt`\
 
-## MapReduce Step 2\
+## MapReduce Step 2
 Running:\
   `./hdp_mapReduce2.sh`\
 Yields:\
