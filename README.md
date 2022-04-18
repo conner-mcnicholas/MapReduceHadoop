@@ -27,21 +27,19 @@ Nissan	2003	1
 With the python code vetted, we execute the hadoop MapReduce jobs in two steps:
 
 ## MapReduce Step 1
-Running:
-  `
-  ./hdp_mapReduce1.sh
-  `
-Yields:
-  `hdp_exec_log1.txt`
-Results Found in:
-  `hdp_results1.txt`
+Running:\
+  `./hdp_mapReduce1.sh`\
+Yields:\
+  `hdp_exec_log1.txt`\
+Results Found in:\
+  `hdp_results1.txt`\
 
-## MapReduce Step 2
-Running:
-  `./hdp_mapReduce2.sh`
-Yields:
-  `hdp_exec_log2.txt`
-Results Found in:
-  `hdp_results2.txt`
+## MapReduce Step 2\
+Running:\
+  `./hdp_mapReduce2.sh`\
+Yields:\
+  `hdp_exec_log2.txt`\
+Results Found in:\
+  `hdp_results2.txt`\
 
 This file matches the output from our test, verifying our MapReduce ran correctly.
