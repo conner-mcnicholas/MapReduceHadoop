@@ -28,7 +28,9 @@ With the python code vetted, we execute the hadoop MapReduce jobs in two steps:
 
 ## MapReduce Step 1
 Running:
-  `./hdp_mapReduce1.sh`
+  `
+  ./hdp_mapReduce1.sh
+  `
 Yields:
   `hdp_exec_log1.txt`
 Results Found in:
