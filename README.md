@@ -79,3 +79,7 @@ Mercedes	2015	2
 Nissan	2003	1
 ```
 This output matches our Bash Pipeline Test, verifying the MapReduce ran as intended.
+
+## View of the primary systems at play in this exercise:
+
+![alt text](https://github.com/conner-mcnicholas/MapReduceHadoop/blob/main/screenshot.png?raw=true)
