@@ -2,10 +2,12 @@
 
 ## Setup
 
-1. Downloaded, Installed, and Booted Cloudera Virtual Machine instance via Oracle VirtualBox
-2. Signed into Terminal as user: cloudera
-3. From filemanager dashboard via http://localhost:8888/, directly uploaded data.csv to /input/
-4. Made new directory /home/cloudera/AutoIncMapRed, and created:
+1. Installed Oracle VirtualBox
+2. Installed Cloudera VM instance, Imported to VirtualBox, Started VM
+3. Signed into Terminal as user: cloudera
+4. The python scripts in this repository are compatible with python2, which the machine has pre-installed.
+5. From filemanager dashboard via http://localhost:8888/, directly uploaded data.csv to /input/
+6. Made new directory /home/cloudera/AutoIncMapRed, and created:
 ```
 autoinc_mapper1.py
 autoinc_reducer1.py
@@ -51,8 +53,6 @@ Yields:\
 Results Found in:\
   `hdp_results2.txt`\
 
-This file matches the output from our test, verifying our MapReduce ran correctly.
-
 The 4 python scripts are the only details not available in this summary:
 ```
 [cloudera@quickstart AutoIncMapRed]$ #mapReduce1
@@ -77,3 +77,4 @@ Mercedes	2016	1
 Mercedes	2015	2
 Nissan	2003	1
 ```
+This output matches our test, verifying the MapReduce ran as intended.
