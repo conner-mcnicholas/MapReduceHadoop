@@ -11,9 +11,10 @@ autoinc_mapper1.py
 autoinc_reducer1.py
 autoinc_mapper2.py
 autoinc_reducer2.py
--*1.py files form the basis of hdp_mapReduce1.sh
--*2.py files form the basis of hdp_mapReduce1.sh
 ```
+*1.py files form the basis of hdp_mapReduce1.sh\
+*2.py files form the basis of hdp_mapReduce1.sh\
+
 ## Test
 
 ```
