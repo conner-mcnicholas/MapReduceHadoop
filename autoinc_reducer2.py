@@ -1,33 +1,31 @@
 #!/usr/bin/env python
-
 import sys
- 
-# Create a dictionary to map words to counts
-accidentrecord = {}
- 
-# Get input from stdin
+
+# [Define group level master information]
+accdict = {}
+
+# input comes from STDIN
 for line in sys.stdin:
-    #Remove spaces from beginning and end of the line
+    # trimming spaces
     line = line.strip()
- 
-    # parse the input from mapper.py
+
+    # [parse the input from mapper]
     line= line.split('\t')
     make=line[0]
     year=line[1]
     count=line[2]
 
-    # convert count (currently a string) to int
+    # must convert string to int
     try:
         count = int(count)
     except ValueError:
         continue
- 
+
     try:
-        accidentrecord[(make,year)] = accidentrecord[(make,year)]+count
+        accdict[(make,year)] = accdict[(make,year)]+count
     except:
-        accidentrecord[(make,year)] = count
- 
-# Write the tuples to stdout
-# Currently tuples are unsorted
-for make,year in accidentrecord.keys():
-    print('%s\t%s\t%s' %(make,year, accidentrecord[(make,year)]))
+        accdict[(make,year)] = count
+
+# write tuples to STDOUT
+for make,year in accdict.keys():
+    print('%s\t%s\t%s' %(make,year, accdict[(make,year)]))

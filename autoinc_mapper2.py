@@ -1,11 +1,10 @@
 #!/usr/bin/env python
-	
 import sys
-# input comes from STDIN (standard input)
+
+# input comes from STDIN
 for line in sys.stdin:
 # [derive mapper output key values]
 	line = line.strip()
-	# parse the input we got from mapper.py
 	line = line.split('\t')
 	make=line[1]
 	year=line[2]
