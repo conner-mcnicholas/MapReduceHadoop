@@ -17,7 +17,7 @@ autoinc_reducer2.py
 *1.py files form the basis of hdp_mapReduce1.sh\
 *2.py files form the basis of hdp_mapReduce2.sh
 
-## Test
+## Bash Pipeline Test
 
 ```
 [cloudera@quickstart AutoIncMapRed]$ #must remember to allow execute permissions on python scripts
@@ -77,4 +77,4 @@ Mercedes	2016	1
 Mercedes	2015	2
 Nissan	2003	1
 ```
-This output matches our test, verifying the MapReduce ran as intended.
+This output matches our Bash Pipeline Test, verifying the MapReduce ran as intended.
