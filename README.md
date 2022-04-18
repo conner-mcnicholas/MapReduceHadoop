@@ -13,7 +13,7 @@ autoinc_mapper2.py
 autoinc_reducer2.py
 ```
 *1.py files form the basis of hdp_mapReduce1.sh\
-*2.py files form the basis of hdp_mapReduce1.sh\
+*2.py files form the basis of hdp_mapReduce2.sh
 
 ## Test
 
@@ -45,3 +45,22 @@ Results Found in:\
   `hdp_results2.txt`\
 
 This file matches the output from our test, verifying our MapReduce ran correctly.
+
+The 4 python scripts are the only details not available in this summary:
+```
+[cloudera@quickstart AutoIncMapRed]$ #mapReduce1
+[cloudera@quickstart AutoIncMapRed]$ hadoop jar /usr/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming-mr1.jar -file /home/cloudera/AutoIncMapRed/autoinc_mapper1.py -mapper "/home/cloudera/AutoIncMapRed/autoinc_mapper1.py" -file /home/cloudera/AutoIncMapRed/autoinc_reducer1.py -reducer "/home/cloudera/AutoIncMapRed/autoinc_reducer1.py" -input /input/data.csv -output /output/all_accidents
+
+[cloudera@quickstart AutoIncMapRed]$ #mapReduce2
+[cloudera@quickstart AutoIncMapRed]$ hadoop jar /usr/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming-mr1.jar -file /home/cloudera/AutoIncMapRed/autoinc_mapper2.py -mapper "/home/cloudera/AutoIncMapRed/autoinc_mapper2.py" -file /home/cloudera/AutoIncMapRed/autoinc_reducer2.py -reducer "/home/cloudera/AutoIncMapRed/autoinc_reducer2.py" -input /output/all_accidents -output /output/make_year_count
+
+[cloudera@quickstart AutoIncMapRed]$ #retrieving output file directory of mapReduce2 from HDFS to VM drive
+[cloudera@quickstart AutoIncMapRed]$ hadoop fs -get /output/make_year_count
+
+[cloudera@quickstart AutoIncMapRed]$ #viewing results of output file from mapReduce2
+[cloudera@quickstart AutoIncMapRed]$ cat make_year_count/*
+Toyota	2017	1
+Mercedes	2016	1
+Mercedes	2015	2
+Nissan	2003	1
+```
