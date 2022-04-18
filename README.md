@@ -53,6 +53,7 @@ Yields:\
 Results Found in:\
   `hdp_results2.txt`\
 
+## Summary
 The 4 python scripts are the only details not available in this summary:
 ```
 [cloudera@quickstart AutoIncMapRed]$ #mapReduce1
