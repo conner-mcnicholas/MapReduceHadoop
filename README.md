@@ -1,5 +1,7 @@
 # MapReduceHadoop
 
+Purpose and deliverables found in <b>Hadoop_Mini_Project_Instructions.pdf<\b>
+
 ## Setup
 
 1. Installed Oracle VirtualBox
