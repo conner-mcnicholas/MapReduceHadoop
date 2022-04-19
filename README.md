@@ -1,6 +1,6 @@
 # MapReduceHadoop
 
-Purpose and deliverables found in <b>Hadoop_Mini_Project_Instructions.pdf<\b>
+Purpose and deliverables found in <b>Hadoop_Mini_Project_Instructions.pdf<b>
 
 ## Setup
 
